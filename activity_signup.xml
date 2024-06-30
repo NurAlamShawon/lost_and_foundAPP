@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="@color/sky_blue">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+       android:layout_weight="0.3">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center"
+       android:textStyle="bold"
+       android:textSize="32sp"
+       android:background="@drawable/lost_and_found"
+       android:textColor="@color/black">
+
+   </TextView>
+
+
+
+  </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+ android:layout_weight="0.4"
+    android:orientation="vertical">
+
+
+ <TableLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_marginLeft="5dp"
+     android:layout_marginRight="5dp"
+     android:background="@color/sky_blue">
+  <TableRow>
+
+   <TextView
+       android:padding="8dp"
+       android:text="User Name"
+       android:textColor="@color/black"></TextView>
+   <TextView
+       android:padding="3dp"
+       android:text=":"
+       android:textColor="@color/black"
+       android:textStyle="bold"></TextView>
+
+   <EditText
+       android:id="@+id/etUserName"
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:background="@drawable/custominput"
+       android:drawableStart="@drawable/user_circle_24"
+       android:hint="Enter UserName"
+       android:inputType="text"></EditText>
+  </TableRow>
+
+  <TableRow>
+
+   <TextView
+       android:padding="10dp"
+       android:text="User Id"
+       android:textColor="@color/black"></TextView>
+
+   <TextView
+
+       android:layout_width="14dp"
+       android:layout_height="wrap_content"
+       android:text=":"
+       android:textColor="@color/black"
+       android:textStyle="bold">
+
+   </TextView>
+
+   <EditText
+       android:id="@+id/etUserId"
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:background="@drawable/custominput"
+       android:drawableStart="@drawable/user_circle_24"
+       android:hint="  Enter a Unique ID"
+       android:inputType="text">
+
+   </EditText>
+
+  </TableRow>
+
+  <TableRow>
+
+   <TextView
+       android:padding="10dp"
+       android:text="Email"
+       android:textColor="@color/black"></TextView>
+
+   <TextView
+       android:padding="3dp"
+       android:text=":"
+       android:textColor="@color/black"
+       android:textStyle="bold"></TextView>
+
+   <EditText
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:drawableStart="@drawable/email_24"
+       android:hint=" Enter Email"
+       android:id="@+id/etEmail"
+       android:background="@drawable/custominput"
+       android:inputType="textEmailAddress">
+
+   </EditText>
+  </TableRow>
+
+
+  <TableRow>
+
+
+   <TextView
+       android:padding="10dp"
+       android:text="Phone"
+       android:textColor="@color/black"></TextView>
+
+   <TextView
+       android:padding="3dp"
+       android:text=":"
+       android:textColor="@color/black"
+       >
+
+   </TextView>
+
+   <EditText
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:drawableStart="@drawable/call_24"
+       android:hint="  Enter Phone Number"
+       android:id="@+id/etPhone"
+       android:background="@drawable/custominput"
+       android:inputType="number">
+
+   </EditText>
+
+  </TableRow>
+
+  <TableRow>
+
+
+
+
+
+   <TextView
+       android:padding="10dp"
+       android:text="Password"
+       android:textColor="@color/black"></TextView>
+
+   <TextView
+       android:padding="3dp"
+       android:text=":"
+       android:textColor="@color/black"
+       android:textStyle="bold"></TextView>
+
+   <EditText
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:id="@+id/etPW"
+       android:hint=" Enter a Unique Password"
+       android:background="@drawable/custominput"
+       android:inputType="number">
+
+   </EditText>
+
+  </TableRow>
+  <TableRow>
+
+
+   <TextView
+       android:padding="10dp"
+       android:text="Re-enter Password"
+       android:textColor="@color/black"></TextView>
+
+   <TextView
+       android:padding="3dp"
+       android:text=":"
+       android:textColor="@color/black"
+       android:textStyle="bold"></TextView>
+
+   <EditText
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:id="@+id/etRPW"
+       android:hint=" Re-Enter Password"
+       android:background="@drawable/custominput"
+       android:inputType="number">
+
+   </EditText>
+
+  </TableRow>
+
+
+
+
+ </TableLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+ android:layout_weight="0.05">
+
+
+
+   <TextView
+       android:padding="8dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Already have an account?"
+       android:textColor="@color/black"
+       android:textStyle="bold">
+
+   </TextView>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/btnLogin"
+       android:text="Login"
+       android:textColor="@color/black"
+       android:backgroundTint="@color/sky_blue">
+
+   </Button>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.08">
+
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:textColor="@color/white"
+     android:backgroundTint="@color/dark_blue"
+     android:id="@+id/btnGo"
+     android:text="Signup"
+     android:textSize="20sp">
+ </Button>
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.17"
+    android:gravity="center">
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textColor="@color/black"
+     android:backgroundTint="@color/sky_blue"
+     android:id="@+id/btnExit"
+     android:text="Exit"
+     android:textSize="20sp">
+ </Button>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

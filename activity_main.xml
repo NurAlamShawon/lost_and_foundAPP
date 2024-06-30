@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:backgroundTint="@color/sky_blue"
+        android:textAlignment="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/grid">
+                <TextView
+                    android:id="@+id/lost"
+                    android:padding="30dp"
+                    android:textSize="25dp"
+                    android:backgroundTint="@color/dark_blue"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/custominput"
+                    android:layout_marginBottom="20dp"
+                    android:text="Lost">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/found"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="25dp"
+                    android:backgroundTint="@color/dark_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/custominput"
+                    android:textAlignment="center"
+                    android:padding="30dp"
+
+                    android:text="Found">
+
+                </TextView>
+
+
+            </GridLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:gravity="center"
+                android:backgroundTint="@color/dark_blue"
+                android:textColor="@color/white"
+                android:text="Logout"
+
+               >
+
+            </Button>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
